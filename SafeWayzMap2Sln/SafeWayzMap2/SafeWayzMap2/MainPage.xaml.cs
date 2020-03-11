@@ -24,6 +24,8 @@ namespace SafeWayzMap2
     {
         public ObservableCollection<Post> _posts { get; set; }
         public List<Position> _positions;
+        public List<Pin> _pins;
+
         public MainPage()
         {
             InitializeComponent();
@@ -51,35 +53,46 @@ namespace SafeWayzMap2
         {
             Geocoder geoCoder = new Geocoder();
             IEnumerable<Position> approximateLocations = await geoCoder.GetPositionsForAddressAsync(address);
-            Position position = approximateLocations.FirstOrDefault();
-            string coordinates = $"{position.Latitude}, {position.Longitude}";
 
-            return position;
+            Position pos = new Position();
+            pos = approximateLocations.FirstOrDefault();
+
+            return pos;
         }
 
 
         public async void PlotPositions()
         {
-            for (int i = 1; i <= _posts.Count; i++)
+            _positions = new List<Position>();
+
+            for (int i = 0; i <= _posts.Count - 1; i++)
             {
-                Position pos = await GetPosition(_posts[i].Address);
+                Position pos = new Position();
+                pos = await GetPosition(_posts[i].Address);
                 var lat = pos.Latitude;
                 var lng = pos.Longitude;
                 _positions.Add(pos);
             }
 
+            _pins = new List<Pin>();
 
-           /* for (int x = 0; x < _positions.Count; x++)
+            for (int x = 0; x < _positions.Count - 1; x++)
             {
-                Circle bounds =  myMap.AddCircle(
-                    new CircleOptions);
-            } */
+                Pin pin = new Pin
+                {
+                    Label = "[incident]",
+                    Address = "[incident description]",
+                    Type = PinType.Place,
+                    Position = _positions[x]
+                };
+                _pins.Add(pin);
+            }
+
+            for (int p = 0; p < _pins.Count - 1; p++)
+            {
+                myMap.Pins.Add(_pins[p]);
+            }
         }
-
-        
-
-        
-
-
+    }
 }
-}
+ 

@@ -2317,7 +2317,8 @@
       "SafeWayzMap2 >= 1.0.0",
       "Xamarin.Essentials >= 1.5.1",
       "Xamarin.Forms >= 4.5.0.356",
-      "Xamarin.Forms.Maps >= 4.5.0.356"
+      "Xamarin.Forms.Maps >= 4.5.0.356",
+      "Xamarin.GooglePlayServices.Maps >= 71.1610.0"
     ]
   },
   "packageFolders": {
@@ -2381,6 +2382,10 @@
           "Xamarin.Forms.Maps": {
             "target": "Package",
             "version": "[4.5.0.356, )"
+          },
+          "Xamarin.GooglePlayServices.Maps": {
+            "target": "Package",
+            "version": "[71.1610.0, )"
           }
         }
       }

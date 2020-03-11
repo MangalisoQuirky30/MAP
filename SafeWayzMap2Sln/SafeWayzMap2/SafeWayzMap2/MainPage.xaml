@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SafeWayzMap2.MainPage"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+
+    <AbsoluteLayout>
+        <StackLayout   AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+             <maps:Map x:Name="myMap"   
+                  ItemsSource="{Binding Locations}">
+               <!--  <maps:Map.ItemTemplate>
+                    <DataTemplate>
+                        <maps:Pin Position="{Binding Position}"
+                              Address="{Binding Address}"
+                              Label="{Binding Description}" />
+                    </DataTemplate>
+                </maps:Map.ItemTemplate> -->
+            </maps:Map>  
+        </StackLayout>
+
+        <Button Text=" My Location" WidthRequest="100" FontSize="5"  AbsoluteLayout.LayoutBounds="0.82,0.95,50,50" AbsoluteLayout.LayoutFlags="PositionProportional"    />
+        <Button Text="Navigate" WidthRequest="100" FontSize="5"    AbsoluteLayout.LayoutBounds="0.62,0.95,50,50" AbsoluteLayout.LayoutFlags="PositionProportional"    />
+        <Button Text="Plot Pin for post" WidthRequest="100" FontSize="5"    AbsoluteLayout.LayoutBounds="0.42,0.95,50,50" AbsoluteLayout.LayoutFlags="PositionProportional"    />
+        <Button Text="+" WidthRequest="100" FontSize="5"    AbsoluteLayout.LayoutBounds="0.22,0.95,50,50" AbsoluteLayout.LayoutFlags="PositionProportional"    />
+        <Button Text="+" WidthRequest="100" FontSize="5"    AbsoluteLayout.LayoutBounds="0.02,0.95,50,50" AbsoluteLayout.LayoutFlags="PositionProportional"    />
+
+
+
+
+    </AbsoluteLayout>
+
+</ContentPage>

@@ -9,8 +9,7 @@
 
     <AbsoluteLayout>
         <StackLayout   AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
-             <maps:Map x:Name="myMap"   
-                  ItemsSource="{Binding Locations}">
+            <maps:Map x:Name="myMap">
                <!--  <maps:Map.ItemTemplate>
                     <DataTemplate>
                         <maps:Pin Position="{Binding Position}"

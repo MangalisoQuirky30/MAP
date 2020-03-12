@@ -1371,11 +1371,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2.iOS\\SafeWayzMap2.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Mangaliso.Sereo\\Desktop\\Test\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2.iOS\\SafeWayzMap2.iOS.csproj",
       "projectName": "SafeWayzMap2.iOS",
-      "projectPath": "C:\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2.iOS\\SafeWayzMap2.iOS.csproj",
+      "projectPath": "C:\\Users\\Mangaliso.Sereo\\Desktop\\Test\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2.iOS\\SafeWayzMap2.iOS.csproj",
       "packagesPath": "C:\\Users\\Mangaliso.Sereo\\.nuget\\packages\\",
-      "outputPath": "C:\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Mangaliso.Sereo\\Desktop\\Test\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1396,8 +1396,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2\\SafeWayzMap2.csproj": {
-              "projectPath": "C:\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2\\SafeWayzMap2.csproj"
+            "C:\\Users\\Mangaliso.Sereo\\Desktop\\Test\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2\\SafeWayzMap2.csproj": {
+              "projectPath": "C:\\Users\\Mangaliso.Sereo\\Desktop\\Test\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2\\SafeWayzMap2.csproj"
             }
           }
         }

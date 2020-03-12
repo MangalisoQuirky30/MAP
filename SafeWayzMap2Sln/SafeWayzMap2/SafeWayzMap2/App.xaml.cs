@@ -8,7 +8,7 @@ namespace SafeWayzMap2
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MapPageCS();
         }
 
         protected override void OnStart()

@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2\\SafeWayzMap2.csproj",
+      "projectUniqueName": "C:\\Users\\Mangaliso.Sereo\\Desktop\\Test\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2\\SafeWayzMap2.csproj",
       "projectName": "SafeWayzMap2",
-      "projectPath": "C:\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2\\SafeWayzMap2.csproj",
+      "projectPath": "C:\\Users\\Mangaliso.Sereo\\Desktop\\Test\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2\\SafeWayzMap2.csproj",
       "packagesPath": "C:\\Users\\Mangaliso.Sereo\\.nuget\\packages\\",
-      "outputPath": "C:\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2\\obj\\",
+      "outputPath": "C:\\Users\\Mangaliso.Sereo\\Desktop\\Test\\SafeWayzMap2Sln\\SafeWayzMap2\\SafeWayzMap2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

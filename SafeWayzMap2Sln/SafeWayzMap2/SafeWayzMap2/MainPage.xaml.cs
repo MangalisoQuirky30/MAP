@@ -29,10 +29,33 @@ namespace SafeWayzMap2
         public MainPage()
         {
             InitializeComponent();
-            
+
             Map map = new Map();
             myMap = map;
             myMap.MapType = MapType.Satellite;
+
+
+
+            var pin1 = new Pin
+            {
+                Type = PinType.Place,
+                Position = new Position(37, -122),
+                Label = "Xamarin San Francisco Office",
+                Address = "394 Pacific Ave, San Francisco CA"
+            };
+
+            myMap.Pins.Add(pin1);
+
+
+            var pin2 = new Pin
+            {
+                Type = PinType.Place,
+                Position = new Position(38, -121),
+                Label = "Xamarin San Francisco Office",
+                Address = "394 Pacific Ave, San Francisco CA"
+            };
+
+            myMap.Pins.Add(pin2);
 
             _posts = GetPosts();
             PlotPositions();
@@ -86,6 +109,7 @@ namespace SafeWayzMap2
                     Position = _positions[x]
                 };
                 _pins.Add(pin);
+
             }
 
             for (int p = 0; p < _pins.Count - 1; p++)
